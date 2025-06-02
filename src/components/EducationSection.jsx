@@ -5,7 +5,7 @@ export const EducationSection = () => {
             institution: "University of Southern California",
             location: "Los Angeles, CA",
             date: "Aug 2024 – May 2026",
-            cgpa: "3.65 / 4.0",
+            cgpa: "3.82 / 4.0",
             description:
                 "Focusing on advanced coursework and projects in AI, Machine Learning, LLMs, and full-stack web development. Actively engaged in research and hands-on applications."
 
@@ -53,7 +53,7 @@ export const EducationSection = () => {
                                     </div>
                                 </div>
                                 <p className="text-sm font-medium text-sky-400 mb-2">{item.degree}</p>
-                                <p className="text-sm text-muted-foreground mb-2">CGPA: {item.cgpa}</p>
+                                <p className="text-sm text-muted-foreground mb-2">GPA: {item.cgpa}</p>
                                 <p className="text-sm text-muted-foreground">{item.description}</p>
                             </div>
                         </div>

@@ -14,11 +14,21 @@ export const ThemeToggle = () => {
   }, []);
 
   const toggleTheme = () => {
-    const nextTheme = isDarkMode ? "light" : "dark";
-    document.documentElement.classList.toggle("dark", nextTheme === "dark");
-    localStorage.setItem("theme", nextTheme);
-    setIsDarkMode(!isDarkMode);
-  };
+  const nextTheme = isDarkMode ? "light" : "dark";
+
+  // Remove both first to avoid stuck states
+  document.documentElement.classList.remove("dark");
+  document.documentElement.classList.remove("light");
+
+  // Add the correct one
+  document.documentElement.classList.add(nextTheme);
+
+  // Persist and update state
+  localStorage.setItem("theme", nextTheme);
+  setIsDarkMode(!isDarkMode);
+};
+
+
 
   return (
     <button

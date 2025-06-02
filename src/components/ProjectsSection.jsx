@@ -10,6 +10,8 @@ import project3 from "../assets/project3.png";
 import project1 from "../assets/project1.jpeg";
 import project2 from  "../assets/project2.png";
 import project5 from "../assets/project5.jpeg";
+import project10 from "../assets/project10.png";
+
 
 const projects = [
   {
@@ -32,6 +34,15 @@ const projects = [
   },
   {
     id: 3,
+    title: "InferPDF",
+    description:
+      "RAG-based PDF Data Extraction Chat App. Used Cohere and Streamlit to analyze multiple PDF documents.",
+    image: project10,
+    tags: ["RAG", "LLM", "LangChain", "FAISS"],
+    githubUrl: "https://github.com/anayagarde/InferPDF",
+  },
+  {
+    id: 4,
     title: "Clearing Feed Generation",
     description:
       "Feed generation tool using Spring Boot and Angular. Supports MySQL-based backend integration for banking workflows.",
@@ -40,7 +51,7 @@ const projects = [
     githubUrl: "https://github.com/anayagarde/ClearingFeedGeneration_Group9",
   },
   {
-    id: 4,
+    id: 5,
     title: "Machine Learning Projects",
     description:
       "Includes book recommendation (KNN), color extraction (KMeans), house price prediction, and text recognition with CNN.",
@@ -49,7 +60,7 @@ const projects = [
     githubUrl: "https://github.com/anayagarde/MLProjects",
   },
   {
-    id: 5,
+    id: 6,
     title: "Recipelicious – Recipe App",
     description:
       "Easily store and manage your favorite recipes with a clean, user-friendly interface. A handbook for quick access to your secret recipes",
@@ -58,7 +69,7 @@ const projects = [
     githubUrl: "https://github.com/anayagarde/recipelicious-web-application",
   },
   {
-    id: 6,
+    id: 7,
     title: "Grocery Delivery – Dijkstra",
     description:
       "Java application to calculate optimal grocery delivery routes during COVID using Dijkstra’s algorithm.",
@@ -67,7 +78,7 @@ const projects = [
     githubUrl: "https://github.com/anayagarde/grocery-delivery",
   },
   {
-    id: 7,
+    id: 8,
     title: "Fitness Tracking System",
     description:
       "Tracks fitness parameters using C++ and linked list data structures. Built with a console-based UI.",

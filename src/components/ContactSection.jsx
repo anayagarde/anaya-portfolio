@@ -10,7 +10,7 @@ import photo from "../assets/img-1.jpeg";
 
 export const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [success, setSuccess] = useState(false); // ✅ added
+  const [success, setSuccess] = useState(false); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -45,7 +45,7 @@ export const ContactSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Left Card */}
-          <div className="z-1000 rounded-xl p-8 shadow-md flex flex-col items-center text-center w-full max-w-md mx-auto">
+          <div className="z-5 rounded-xl p-8 shadow-md flex flex-col items-center text-center w-full max-w-md mx-auto">
             <img
               src={photo}
               alt="Anaya Garde"
@@ -74,7 +74,7 @@ export const ContactSection = () => {
           </div>
 
           {/* Right Form */}
-          <div className="p-8 border bg-card rounded-xl shadow z-1000">
+          <div className="z-5 p-8 border bg-card rounded-xl shadow">
             <h3 className="text-xl font-medium mb-6">
               Have something in mind? Let’s talk!
             </h3>
@@ -87,7 +87,7 @@ export const ContactSection = () => {
               <div>
                 <label className="block mb-2 text-sm font-medium">Name</label>
                 <input
-                  name="name" // ✅ REQUIRED
+                  name="name"
                   type="text"
                   required
                   placeholder="Enter your name"
@@ -97,7 +97,7 @@ export const ContactSection = () => {
               <div>
                 <label className="block mb-2 text-sm font-medium">Email</label>
                 <input
-                  name="email" // ✅ REQUIRED
+                  name="email" 
                   type="email"
                   required
                   placeholder="Enter your email"
@@ -107,7 +107,7 @@ export const ContactSection = () => {
               <div>
                 <label className="block mb-2 text-sm font-medium">Message</label>
                 <textarea
-                  name="message" // ✅ REQUIRED
+                  name="message"
                   rows="4"
                   required
                   placeholder="I’d love to hear from you!"

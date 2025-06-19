@@ -1,6 +1,14 @@
 export const ExperienceSection = () => {
   const experiences = [
     {
+      role: "AI Application Developer Intern",
+      company: "UPSIDE Foods",
+      location: "Berkeley, CA",
+      date: "Jun 2025 – Aug 2025",
+      description:
+        "Working on building scalable AI and ML models.",
+    },
+    {
       role: "Software Engineer",
       company: "Deutsche Bank",
       location: "Pune, India",
